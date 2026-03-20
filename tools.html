@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стратегічна реконфігурація фармацевтичного ланцюга постачань 2026</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration for Consulting Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        teal: {
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                        },
+                        coral: {
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Abstract Background for Hero */
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        
+        /* HTML/CSS Bar Chart Animation */
+        @keyframes fillBar {
+            from { width: 0; }
+        }
+        .animate-bar {
+            animation: fillBar 1.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-600 antialiased bg-white selection:bg-teal-500 selection:text-white">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-extrabold text-2xl tracking-tighter text-navy-900">
+                        Pharma<span class="text-teal-600">Strategy</span>
+                    </span>
+                </div>
+                <nav class="hidden lg:flex space-x-6">
+                    <a href="#problem" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Проблема</a>
+                    <a href="#trends" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Тренди</a>
+                    <a href="#impact" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Вплив</a>
+                    <a href="#insights" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Інсайти</a>
+                    <a href="#ai-tools" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">AI Інструменти</a>
+                    <a href="#roadmap" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Дорожня карта</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#cta" class="bg-teal-600 text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-teal-700 transition-colors shadow-sm">
+                        Отримати звіт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/95 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <p class="text-teal-500 font-semibold tracking-wider uppercase text-sm mb-4 border-l-2 border-teal-500 pl-3">
+                        Аналітичний звіт 2026
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+                        Стратегічна реконфігурація глобального фарм-ланцюга.
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-10 font-light leading-relaxed">
+                        Від епохи оптимізації витрат до ери стійкості. Дізнайтеся, як геополітика, нові тарифи та регуляторні зміни формують ринок ліків у 2026 році та вимагають негайної реакції C-level.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#problem" class="bg-teal-600 text-white px-8 py-4 rounded font-semibold text-center hover:bg-teal-500 transition-all shadow-lg hover:shadow-teal-500/25">
+                            Ознайомитись зі стратегіями
+                        </a>
+                        <a href="#cta" class="bg-transparent border border-slate-500 text-white px-8 py-4 rounded font-semibold text-center hover:border-white hover:bg-slate-800 transition-all">
+                            Завантажити повний звіт
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Abstract Data Art / Decorative -->
+                <div class="hidden lg:block relative h-full min-h-[400px]">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-teal-500 rounded-full blur-[100px] opacity-20"></div>
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto opacity-80 animate-[spin_60s_linear_infinite]">
+                                <path fill="none" stroke="#0d9488" stroke-width="1" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,95.5,-3.1C94.2,11.8,85.6,26.1,75.4,38.1C65.2,50.1,53.4,59.8,40.1,68.4C26.8,77,12,84.5,-2.9,89.1C-17.8,93.7,-35.6,95.4,-49.5,88.7C-63.4,82,-73.4,66.9,-81.2,51.3C-89,35.7,-94.6,19.6,-93.7,4.1C-92.8,-11.4,-85.4,-26.3,-75.8,-38.7C-66.2,-51.1,-54.4,-61,-41.2,-68.6C-28,-76.2,-14,-81.5,0.7,-82.7C15.4,-83.9,30.5,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-navy-900/80 backdrop-blur border border-slate-700 p-6 rounded-lg shadow-2xl">
+                                    <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">Фокус 2026</p>
+                                    <p class="text-white text-2xl font-bold">Стійкість > Ефективність</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Problem Section -->
+    <section id="problem" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-6">
+                        Кінець епохи Lean-логістики в умовах геополітичної волатильності.
+                    </h2>
+                    <div class="w-20 h-1 bg-coral-600 mb-8"></div>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Парадигма єдиного постачальника та мінімальних запасів (just-in-time) виявилася крихкою. Сьогодні торгова політика стала не просто інструментом економіки, а <strong>зброєю національної безпеки</strong>.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Глобальний фармацевтичний ринок зіткнувся з безпрецедентним тиском. Загрози митних зборів, нові регуляції щодо ціноутворення та фрагментація торгових шляхів змушують компанії екстрено переглядати архітектуру своїх ланцюгів постачань.
+                    </p>
+                </div>
+                
+                <!-- Data Cards (Risks) -->
+                <div class="space-y-6">
+                    <!-- Card 1 -->
+                    <div class="bg-slate-50 border border-slate-100 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-coral-500"></div>
+                        <div class="flex items-baseline gap-4 mb-2">
+                            <span class="text-5xl font-extrabold text-navy-900 group-hover:text-coral-600 transition-colors">82%</span>
+                            <span class="text-sm font-semibold text-slate-400 uppercase tracking-wide">Компаній</span>
+                        </div>
+                        <p class="text-slate-700 font-medium">Заявляють про прямий вплив нових тарифів на їхні ланцюги постачань (дані McKinsey).</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-slate-50 border border-slate-100 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-coral-500"></div>
+                        <div class="flex items-baseline gap-4 mb-2">
+                            <span class="text-5xl font-extrabold text-navy-900 group-hover:text-coral-600 transition-colors">38-79%</span>
+                        </div>
+                        <p class="text-slate-700 font-medium">Очікуване падіння цін на топ-10 препаратів у США через IRA, що критично тисне на маржинальність з 1 січня 2026 року.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-slate-50 border border-slate-100 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-coral-500"></div>
+                        <div class="flex items-baseline gap-4 mb-2">
+                            <span class="text-5xl font-extrabold text-navy-900 group-hover:text-coral-600 transition-colors">8.7%</span>
+                        </div>
+                        <p class="text-slate-700 font-medium">Прогнозоване падіння загального показника EBITDA в галузі охорони здоров'я США у 2027 році.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Global Trends -->
+    <section id="trends" class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    Сили, що змінюють правила гри
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Макроекономічні та регуляторні зсуви, які визначатимуть операційне середовище у 2025-2026 роках.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Trend 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Зростання ринку API</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Ринок активних фарм-інгредієнтів досягне <strong class="text-navy-900">$198.39 млрд до 2030</strong> (лише ринок США — $118.59 млрд). Драйверами є попит на складні API (HPAPI, пептиди) та тенденція до повернення виробництва (reshoring).
+                    </p>
+                </div>
+
+                <!-- Trend 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Регуляторні зрушення ЄС</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Нова фармацевтична політика ЄС запроваджує 8 років ексклюзивності даних для нових речовин (до 11 років за умов інновацій). Відбувається глибока інтеграція України в європейські медичні закупівлі.
+                    </p>
+                </div>
+
+                <!-- Trend 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Вимоги до серіалізації</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Каскадні жорсткі дедлайни (2025-2026) для виробників, дистриб'юторів та аптек щодо систем відстеження (включаючи EU FMD), що радикально ускладнює логістичний комплаєнс.
+                    </p>
+                </div>
+
+                <!-- Trend 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Зростання ринків, що розвиваються</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Стрімкий розвиток в Азії та СНД. Фармринок Узбекистану зріс на 18% (до $2 млрд у 2025), а Казахстан активно трансформує локальне виробництво, стимулюючи іноземні інвестиції.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Business Impact -->
+    <section id="impact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Visual Data/Charts HTML -->
+                <div class="order-2 lg:order-1 space-y-8">
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="font-bold text-navy-900">Виробничі запаси (Front-loading)</span>
+                            <span class="text-sm font-semibold text-teal-600">+ Значний приріст</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3 mb-2 overflow-hidden">
+                            <div class="bg-teal-500 h-3 rounded-full animate-bar" style="width: 85%"></div>
+                        </div>
+                        <p class="text-xs text-slate-500">Накопичення через загрозу тарифів США</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="font-bold text-navy-900">Тарифний тиск (Витрати)</span>
+                            <span class="text-sm font-semibold text-coral-600">Критичний рівень</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3 mb-2 overflow-hidden">
+                            <div class="bg-coral-500 h-3 rounded-full animate-bar" style="width: 92%"></div>
+                        </div>
+                        <p class="text-xs text-slate-500">Фармацевтика найбільше потерпає серед споживчих секторів</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="font-bold text-navy-900">Довгострокова цифровізація</span>
+                            <span class="text-sm font-semibold text-amber-500">Призупинено / Затримка</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3 mb-2 overflow-hidden">
+                            <div class="bg-amber-400 h-3 rounded-full animate-bar" style="width: 35%"></div>
+                        </div>
+                        <p class="text-xs text-slate-500">Зміщення фокусу на тактичне виживання</p>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-6">
+                        Від стратегії до тактики: <br>ціна адаптації.
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Фізичний вплив глобальних трендів на операційну діяльність змушує компанії змінювати пріоритети на ходу.
+                    </p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                                    <span class="font-bold text-sm">1</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-navy-900 mb-1">"Фронт-лоадінг" виробництва</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">Глобальне виробництво різко зросло через загрозу тарифів США. Компанії інтенсивно накопичують запаси, заморожуючи оборотний капітал.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                                    <span class="font-bold text-sm">2</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-navy-900 mb-1">Затримка цифровізації</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">Увага лідерів змістилася на тактичні кроки (перенесення запасів, жорсткі переговори з постачальниками) ціною призупинення масштабної цифрової трансформації.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                                    <span class="font-bold text-sm">3</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-navy-900 mb-1">Тягар релокації (Reshoring)</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">Перенесення виробництва з Китаю до США або ЄС для уникнення мит залишається надзвичайно складним і дорогим процесом, особливо для малого та середнього бізнесу.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Strategic Insights -->
+    <section id="insights" class="py-24 bg-slate-900 text-white relative">
+        <!-- Abstract shape -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-teal-600 rounded-bl-[100%] opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-16">
+                <p class="text-teal-400 font-semibold tracking-wider uppercase text-sm mb-3">Executive Summary</p>
+                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">
+                    Стійкість як нова <br/><span class="text-teal-400">конкурентна перевага.</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Insight 1 -->
+                <div class="pl-6 border-l-4 border-teal-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Розрив між стратегією та ризиком</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Компанії, які уникають інвестицій у цифрову видимість ланцюга постачань (концентруючись виключно на тарифах), стануть найбільш вразливими під час наступного непередбачуваного шоку.
+                    </p>
+                </div>
+
+                <!-- Insight 2 -->
+                <div class="pl-6 border-l-4 border-teal-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ефективна диверсифікація</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Географічна гнучкість працює. Використання британських (UK) виробничих потужностей американськими компаніями для ринків ЄС допомагає легально обійти жорсткі експортні обмеження.
+                    </p>
+                </div>
+
+                <!-- Insight 3 -->
+                <div class="pl-6 border-l-4 border-teal-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Холодовий ланцюг — нова норма</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Зростання частки біопрепаратів та нових модальностей вимагає безпрецедентної точності у логістиці. Температурний контроль (0~10℃) стає базовою вимогою, а не преміум-послугою.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. NEW: Recommended AI Tools for 2026 -->
+    <section id="ai-tools" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-teal-600 font-semibold tracking-wider uppercase text-sm mb-3">Технологічний стек</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    Рекомендовані AI Інструменти для 2026 року
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Практичні рішення для відновлення цифровізації, управління ризиками та оптимізації логістичних процесів.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Tool 1 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-100 px-2 py-1 rounded">Аналітика попиту</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">Predictive Demand AI</h3>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">
+                        Точне прогнозування попиту та управління запасами для запобігання надлишковій закупівлі (front-loading) та оптимізації капіталу.
+                    </p>
+                    <a href="#" class="text-teal-600 font-semibold text-sm flex items-center gap-1 hover:text-teal-700 transition-colors mt-auto">
+                        Дізнатися більше <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Tool 2 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-100 px-2 py-1 rounded">Логістика</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">ColdChain ML Monitor</h3>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">
+                        Моніторинг температурних режимів (0~10℃) в реальному часі за допомогою IoT датчиків та алгоритмів запобігання відхиленням.
+                    </p>
+                    <a href="#" class="text-teal-600 font-semibold text-sm flex items-center gap-1 hover:text-teal-700 transition-colors mt-auto">
+                        Дізнатися більше <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Tool 3 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-100 px-2 py-1 rounded">Управління ризиками</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">SupplierRisk Guard</h3>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">
+                        Автоматизована оцінка геополітичних зсувів та тарифних ризиків для формування пулів альтернативних постачальників.
+                    </p>
+                    <a href="#" class="text-teal-600 font-semibold text-sm flex items-center gap-1 hover:text-teal-700 transition-colors mt-auto">
+                        Дізнатися більше <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Tool 4 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider bg-slate-100 px-2 py-1 rounded">Комплаєнс</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">RegulaChain AI</h3>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">
+                        Система автоматизації регуляторної відповідності, що інтегрує серіалізацію та вимоги EU FMD безпосередньо в ERP платформи.
+                    </p>
+                    <a href="#" class="text-teal-600 font-semibold text-sm flex items-center gap-1 hover:text-teal-700 transition-colors mt-auto">
+                        Дізнатися більше <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Actions / Playbook -->
+    <section id="actions" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    План дій керівника на 2026 рік
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Практичний посібник для адаптації архітектури постачань.
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 border-t-4 border-navy-900 shadow-sm">
+                    <span class="block text-4xl font-black text-slate-200 mb-4">01</span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4">Переоцінка архітектури постачань</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Створення резервних пулів постачальників (pre-approved alternates). Необхідно знайти оптимальний баланс між "Nearshoring" (наближенням виробництва) та традиційним глобальним сорсингом.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 border-t-4 border-teal-600 shadow-sm">
+                    <span class="block text-4xl font-black text-slate-200 mb-4">02</span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4">Відновлення цифрових інвестицій</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Розмороження бюджетів на впровадження AI для прогнозування попиту, передових систем відстеження (Track & Trace) та інтегрованих рішень для моніторингу холодового ланцюга.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 border-t-4 border-coral-600 shadow-sm">
+                    <span class="block text-4xl font-black text-slate-200 mb-4">03</span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-4">Регуляторна гнучкість</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Інтеграція вимог щодо серіалізації (EU FMD) та адаптація до цінового тиску (Закон IRA у США) безпосередньо в стратегію захисту маржинальності компанії.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. NEW: Business Roadmap for 2026 -->
+    <section id="roadmap" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-coral-600 font-semibold tracking-wider uppercase text-sm mb-3">Виконання стратегії</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mb-4">
+                    Стратегічна дорожня карта на 2026 рік
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Покроковий план інтеграції нових рішень для мінімізації ризиків та підвищення стійкості ланцюга постачань.
+                </p>
+            </div>
+
+            <!-- Connected Timeline Grid -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-10 left-0 w-full h-1 bg-slate-100 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    
+                    <!-- Phase 1 -->
+                    <div class="relative pl-8 md:pl-0">
+                        <!-- Node indicator -->
+                        <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2 md:top-6 w-8 h-8 rounded-full bg-navy-900 border-4 border-white shadow flex items-center justify-center text-white text-xs font-bold z-10">Q1</div>
+                        <!-- Vertical connecting line (Mobile) -->
+                        <div class="md:hidden absolute left-[15px] top-8 bottom-[-40px] w-0.5 bg-slate-100 z-0"></div>
+                        
+                        <div class="md:text-center md:pt-20">
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Аудит та стрес-тестування</h4>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-3">Оцінка вразливостей до нових тарифів США та вимог європейського законодавства. Сценарне планування.</p>
+                            <span class="inline-flex items-center text-xs font-semibold text-slate-500 uppercase tracking-wide bg-slate-100 px-2 py-1 rounded">Планування</span>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="relative pl-8 md:pl-0">
+                        <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2 md:top-6 w-8 h-8 rounded-full bg-teal-500 border-4 border-white shadow flex items-center justify-center text-white text-xs font-bold z-10">Q2</div>
+                        <div class="md:hidden absolute left-[15px] top-8 bottom-[-40px] w-0.5 bg-slate-100 z-0"></div>
+                        
+                        <div class="md:text-center md:pt-20">
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Диверсифікація постачальників</h4>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-3">Затвердження альтернативних пулів та частковий "Nearshoring" для ключових активних інгредієнтів (API).</p>
+                            <span class="inline-flex items-center text-xs font-semibold text-slate-500 uppercase tracking-wide bg-slate-100 px-2 py-1 rounded">Виконання</span>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="relative pl-8 md:pl-0">
+                        <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2 md:top-6 w-8 h-8 rounded-full bg-amber-500 border-4 border-white shadow flex items-center justify-center text-white text-xs font-bold z-10">Q3</div>
+                        <div class="md:hidden absolute left-[15px] top-8 bottom-[-40px] w-0.5 bg-slate-100 z-0"></div>
+                        
+                        <div class="md:text-center md:pt-20">
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Інтеграція AI та відстеження</h4>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-3">Розгортання систем Track & Trace, запуск предиктивної аналітики попиту для стабілізації запасів.</p>
+                            <span class="inline-flex items-center text-xs font-semibold text-slate-500 uppercase tracking-wide bg-slate-100 px-2 py-1 rounded">Технології</span>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 -->
+                    <div class="relative pl-8 md:pl-0">
+                        <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2 md:top-6 w-8 h-8 rounded-full bg-coral-500 border-4 border-white shadow flex items-center justify-center text-white text-xs font-bold z-10">Q4</div>
+                        
+                        <div class="md:text-center md:pt-20">
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">Оптимізація холодового ланцюга</h4>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-3">Масштабування логістичних рішень для транспортування біопрепаратів в умовах жорсткого температурного контролю.</p>
+                            <span class="inline-flex items-center text-xs font-semibold text-slate-500 uppercase tracking-wide bg-slate-100 px-2 py-1 rounded">Логістика</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Final CTA Section -->
+    <section id="cta" class="py-16 bg-white pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy-900 rounded-2xl overflow-hidden shadow-2xl relative">
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMGYxNzJhIiAvPgo8cGF0aCBkPSJNMCAwbDhfOFpNOCAwTDBfOFoiIHN0cm9rZT0iIzFmMjkzNyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgo8L3N2Zz4=')] opacity-20"></div>
+                <div class="relative p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="max-w-xl">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Готові трансформувати ваш ланцюг постачань?</h3>
+                        <p class="text-slate-300">
+                            Отримайте персоналізовану консультацію щодо реструктуризації логістики або завантажте повний дата-сет прогнозів на 2026 рік.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-auto flex-shrink-0">
+                        <form class="flex flex-col gap-3 w-full sm:w-80">
+                            <input type="email" placeholder="Робочий Email" class="px-4 py-3 rounded bg-white/10 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors" required>
+                            <button type="submit" class="px-4 py-3 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded transition-colors shadow-lg hover:shadow-teal-500/25">
+                                Отримати доступ
+                            </button>
+                            <p class="text-xs text-slate-500 text-center mt-2">Конфіденційність гарантовано.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 py-12 border-t border-slate-800 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-extrabold text-xl tracking-tighter text-white">
+                    Pharma<span class="text-teal-600">Strategy</span>
+                </span>
+            </div>
+            <div class="text-slate-500 text-sm">
+                &copy; 2026 PharmaStrategy Analytics. Всі права захищено. Створено на базі галузевих звітів.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                <a href="#" class="text-slate-500 hover:text-white transition-colors text-sm">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
